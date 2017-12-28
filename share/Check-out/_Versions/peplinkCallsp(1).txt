@@ -1,0 +1,4 @@
+Acesso PeplinkCallsp:
+http://3.3.3.3/cgi-bin/MANGA/index.cgi?mode=config&option=utsysinfo&page_index=0 
+admin 
+B@lanC3C@llSp 

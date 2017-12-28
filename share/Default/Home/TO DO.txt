@@ -1,0 +1,7 @@
+volume do som;
+Número de PA nos atributos;
+nomenclatura -> PHP;
+Reset de senha Calltechcall;
+Atualização Jornada;
+*Integração RM+AD = Propriedades
+1234

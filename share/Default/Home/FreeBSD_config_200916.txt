@@ -1,0 +1,40 @@
+##### FreeBSD config 200916 #####
+
+pkg install openssh-portable
+pkg install pico-alpine
+
+rehash
+
+
+# /root/.csh
+alias ls        ls -Gh
+alias pico      pico -w
+alias nano      nano -w
+alias ne        netstat -an
+alias nr        netstat -rn
+set autolist
+
+bindkey "\e[1~" beginning-of-line  # Home
+bindkey "\e[7~" beginning-of-line  # Home rxvt
+bindkey "\e[2~" overwrite-mode     # Ins
+bindkey "\e[3~" delete-char        # Delete
+bindkey "\e[4~" end-of-line        # End
+bindkey "\e[8~" end-of-line        # End rxvt
+
+# /etc/rc.conf
+syslogd_flags="-ss"
+clear_tmp_enable="YES"
+sendmail_enable="NONE"
+sendmail_submit_enable="NO"
+
+openssh_enable="YES"
+
+# /etc/hosts
+127.0.0.1               localhost f103.call.br
+10.61.200.251           f103.call.br f103
+
+# Desconectar usb
+usbconfig list
+usbconfig -u 2 -a 3 power_off
+usbconfig -u 1 -a 2 power_off
+
